@@ -1,32 +1,53 @@
 import React, { Component } from 'react';
-import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
+import { View } from 'react-native';
 import firebase from 'firebase';
-import ReduxThunk from 'redux-thunk'
-import reducers from './reducers';
-import Router from './Router';
+import { Header, Button, Spinner } from './components/common';
+import LoginForm from './components/LoginForm';
 
 class App extends Component {
+  state = { loggedIn: null };
+
   componentWillMount() {
-    const config = {
+    firebase.initializeApp({
       apiKey: "AIzaSyAzr7VRMSJYjInvAZCjrVoLSZUHwoms37c",
     authDomain: "gamesetmatch-8b949.firebaseapp.com",
     databaseURL: "https://gamesetmatch-8b949.firebaseio.com",
     projectId: "gamesetmatch-8b949",
     storageBucket: "gamesetmatch-8b949.appspot.com",
     messagingSenderId: "860716796545"
+    });
+
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        this.setState({ loggedIn: true });
+      } else {
+        this.setState({ loggedIn: false });
+      }
+    });
   }
-  firebase.initializeApp(config);
+
+  renderContent() {
+    switch (this.state.loggedIn) {
+      case true:
+        return (
+          <Button onPress={() => firebase.auth().signOut()}>
+            Log Out
+          </Button>
+        );
+      case false:
+        return <LoginForm />;
+      default:
+        return <Spinner size="large" />;
+    }
   }
 
   render() {
-    const store = createStore(reducers, {}, applyMiddleware(ReduxThunk))
-
-    return(
-      <Provider store={store}>
-        <Router />
-      </Provider>
-    )
+    return (
+      <View>
+        <Header headerText="Game Set Match" />
+        {this.renderContent()}
+      </View>
+    );
   }
 }
 
