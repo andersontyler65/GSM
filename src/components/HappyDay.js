@@ -1,8 +1,12 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 
-const HappyDay = () => {
-  <Text>Success!!</Text>
+const HappyDay = (props) => {
+  return (
+    <View>
+      <Text>Success!!</Text>
+    </View>
+  )
 }
 
 

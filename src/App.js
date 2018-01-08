@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
 import firebase from 'firebase';
-import { Header, Button, Spinner } from './components/common';
+import { Header, Button, Spinner, CardSection, Card } from './components/common';
 import LoginForm from './components/LoginForm';
+import RouterComponent from './Router'
+import HappyDay from './components/HappyDay';
 
 class App extends Component {
   state = { loggedIn: null };
@@ -30,14 +32,21 @@ class App extends Component {
     switch (this.state.loggedIn) {
       case true:
         return (
-          <Button onPress={() => firebase.auth().signOut()}>
+          <Card>
+          <CardSection>
+            <HappyDay />
+          </CardSection>
+          <CardSection>
+          <Button onPress={() => firebase.auth().signOut()} >
             Log Out
           </Button>
+        </CardSection>
+        </Card>
         );
       case false:
         return <LoginForm />;
       default:
-        return <Spinner size="large" />;
+        return <Spinner size="small" />;
     }
   }
 

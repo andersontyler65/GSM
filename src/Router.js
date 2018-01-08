@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Scene, Router } from 'react-native-router-flux'
+import { Text, View, Button, Card, CardSection } from 'react-native';
 
-// VIEWS //
 import LoginForm from './components/LoginForm';
 import HappyDay from './components/HappyDay';
 // import UserView from './views/UserView'
@@ -26,6 +26,7 @@ class RouterComponent extends Component {
            component={HappyDay}
            hideNavBar
            />
+         </Scene>
          {/* <Scene
            key='UserView'
            component={UserView}

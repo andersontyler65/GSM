@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text } from 'react-native';
+import { Text, Image } from 'react-native';
 import firebase from 'firebase';
 import { Button, Card, CardSection, Input, Spinner } from './common';
 
@@ -84,6 +84,15 @@ const styles = {
     fontSize: 20,
     alignSelf: 'center',
     color: 'red'
+  },
+  thumbnailStyle: {
+    width: 80,
+    height: 60,
+    borderRadius: 60,
+    borderWidth: 60,
+  },
+  thumbnailContainerStyle: {
+    flex: 1,
   }
 };
 
