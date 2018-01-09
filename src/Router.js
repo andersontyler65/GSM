@@ -1,55 +1,36 @@
-import React, { Component } from 'react'
-import { Scene, Router } from 'react-native-router-flux'
-import { Text, View, Button, Card, CardSection } from 'react-native';
-
+import React from 'react'
+import { Scene, Router, Actions } from 'react-native-router-flux'
 import LoginForm from './components/LoginForm';
 import HappyDay from './components/HappyDay';
-// import UserView from './views/UserView'
-// import ActivityIndicatorView from './views/ActivityIndicatorView'
+// import { Text, View, Button, Card, CardSection } from 'react-native';
+
 // View are made up of smaller components that comprise the total view page on the screen of a users device.
 // The app navigates between views.
 
-class RouterComponent extends Component {
-
-  render() {
+ const RouterComponent = () => {
    return (
-      <Router>
-       <Scene key="root" >
+      <Router sceneStyle={{ paddingTop: 65}}>
+       <Scene key="auth" >
          <Scene
-           key="LoginForm"
+           key="login"
            component={LoginForm}
-           hideNavBar
-           initial
-           />
-         <Scene
-           key="Success"
-           component={HappyDay}
-           hideNavBar
+           title="Please Log In"
+          //  hideNavBar
+          //  initial
            />
          </Scene>
-         {/* <Scene
-           key='UserView'
-           component={UserView}
-           panHandlers={null}
-           title='Back'
-           hideNavBar
-           /> */}
-         {/* <Scene
-           key='VenueDetailView'
-           component={VenueDetailView}
-           title=''
-           navigationBarStyle={{backgroundColor: 'rgba(255, 255, 255, 1)'}}
+
+         <Scene key="Main">
+           <Scene
+             rightTitle="Add Favorites"
+             key="Success"
+             title="Welcome"
+             component={HappyDay}
+             initial
            />
-         <Scene
-           key='NativeMapView'
-           component={NativeMapView}
-           title={this.props.searchTerm}
-           navigationBarStyle={{backgroundColor: 'rgba(117,206,182,1)'}}
-           />
-        </Scene> */}
+         </Scene>
       </Router>
     )
   }
-}
 
 export default RouterComponent
