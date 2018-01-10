@@ -2,6 +2,7 @@ import React from 'react'
 import { Scene, Router, Actions } from 'react-native-router-flux'
 import LoginForm from './components/LoginForm';
 import HappyDay from './components/HappyDay';
+import ProfilePage from './components/ProfilePage';
 // import { Text, View, Button, Card, CardSection } from 'react-native';
 
 // View are made up of smaller components that comprise the total view page on the screen of a users device.
@@ -25,7 +26,7 @@ import HappyDay from './components/HappyDay';
              rightTitle="Add Favorites"
              key="Success"
              title="Welcome"
-             component={HappyDay}
+             component={ProfilePage}
              initial
            />
          </Scene>
