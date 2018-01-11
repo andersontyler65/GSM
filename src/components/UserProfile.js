@@ -3,10 +3,17 @@ import { Text, View } from 'react-native';
 
 const UserProfile = (props) => {
   return (
-    <View>
+    <View style={styles.background}>
       <Text>User Profile Page!!</Text>
     </View>
   )
+}
+
+const styles = {
+  background: {
+    flex: 1,
+    backgroundColor: 'rgba(0,0,0, 0.5)',
+  }
 }
 
 

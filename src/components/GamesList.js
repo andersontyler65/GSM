@@ -13,5 +13,7 @@ const styles = {
   background: {
     flex: 1,
     backgroundColor: 'rgba(0,0,0, 0.5)',
+  }
 }
+
 export default GamesList;

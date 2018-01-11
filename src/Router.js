@@ -6,6 +6,7 @@ import TeamsList from './components/TeamsList';
 import GamesList from './components/GamesList';
 import UserProfile from './components/UserProfile';
 import MapPage from './components/MapPage';
+import Favorites from './components/Favorites';
 
  const RouterComponent = () => {
    return (
