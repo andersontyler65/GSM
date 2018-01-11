@@ -1,12 +1,11 @@
 import React from 'react'
 import { Scene, Router, Actions } from 'react-native-router-flux'
 import LoginForm from './components/LoginForm';
-import HappyDay from './components/HappyDay';
 import ProfilePage from './components/ProfilePage';
-// import { Text, View, Button, Card, CardSection } from 'react-native';
-
-// View are made up of smaller components that comprise the total view page on the screen of a users device.
-// The app navigates between views.
+import TeamsList from './components/TeamsList';
+import GamesList from './components/GamesList';
+import UserProfile from './components/UserProfile';
+import MapPage from './components/MapPage';
 
  const RouterComponent = () => {
    return (
@@ -15,21 +14,40 @@ import ProfilePage from './components/ProfilePage';
          <Scene
            key="login"
            component={LoginForm}
-           title="Please Log In"
-          //  hideNavBar
-          //  initial
-           />
+           title="Please LogIn"
+          />
          </Scene>
 
          <Scene key="Main">
            <Scene
-             rightTitle="Add Favorites"
-             key="Success"
-             title="Welcome"
-             component={ProfilePage}
-             initial
+            rightTitle="Add"
+            key="ProfilePage"
+            component={ProfilePage}
+            title="Game Set Match"
+            initial
+           />
+           <Scene
+             key="addFavorite"
+             component={TeamsList}
+             title="Add Favorites"
+           />
+           <Scene
+             key="selectGames"
+             component={GamesList}
+             title="Select A Game"
+           />
+           <Scene
+             key="location"
+             component={MapPage}
+             title="Find Watch Parties"
+           />
+           <Scene
+             key="userProfile"
+             component={UserProfile}
+             title="Profile"
            />
          </Scene>
+
       </Router>
     )
   }

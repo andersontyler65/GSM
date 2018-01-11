@@ -6,25 +6,27 @@ import {
   View,
   Image,
   Dimensions,
-  ScrollView
+  ScrollView,
 } from 'react-native';
+// import NavBar from './NavBar';
+import BottomNav from './BottomNav';
 
 export default class ProfilePage extends Component {
   render() {
     return (
       <View style={styles.headerBackground}>
-        {/* <Image style={styles.headerBackground} source={require('../img/gsmLogo.png')} /> */}
 
         <View style={styles.header}>
 
-        {/* <View style={styles.profilepicWrap}> */}
             <Image style={styles.profilePic, styles.profilepicWrap} source={require('../img/Tyler_Anderson.jpg')} />
-        {/* </View> */}
 
           <Text style={styles.name}> Tyler Anderson </Text>
           <Text style={styles.pos}> - GO BRONCOS! - </Text>
 
+
         </View>
+        <BottomNav />
+
         </View>
     )
   }
