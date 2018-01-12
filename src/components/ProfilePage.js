@@ -8,7 +8,6 @@ import {
   Dimensions,
   ScrollView,
 } from 'react-native';
-// import NavBar from './NavBar';
 import BottomNav from './BottomNav';
 
 export default class ProfilePage extends Component {
@@ -17,14 +16,12 @@ export default class ProfilePage extends Component {
       <View style={styles.headerBackground}>
 
         <View style={styles.header}>
-
-            <Image style={styles.profilePic, styles.profilepicWrap} source={require('../img/Tyler_Anderson.jpg')} />
+            <Image style={styles.profilePic, styles.profilepicWrap} source={require('../img/Tyler_Anderson.png')} />
 
           <Text style={styles.name}> Tyler Anderson </Text>
           <Text style={styles.pos}> - GO BRONCOS! - </Text>
-
-
         </View>
+
         <BottomNav />
 
         </View>
@@ -47,7 +44,7 @@ const styles = StyleSheet.create({
   },
   profilepicWrap: {
     width: 180,
-    height: 180,
+    height: 200,
     borderRadius: 50,
     borderColor: 'rgba(0,0,0, 0.4)',
     borderWidth: 1,
