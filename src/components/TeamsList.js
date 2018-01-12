@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Header, Content, List, ListItem, Text, Separator, SwipeRow, Icon, Button, View } from 'native-base';
 import axios from 'axios';
+import TeamDetails from './TeamDetails';
 
 
 class TeamsList extends Component {
@@ -13,12 +14,11 @@ class TeamsList extends Component {
 
   renderTeams() {
       return this.state.teams.map(team =>
-        <Text key={team.official_name}>{team.official_name}</Text>
+        <TeamDetails key={team.official_name} team={team} />
       )
     }
 
   render() {
-    console.log(this.state)
   return (
     <View >
       {this.renderTeams()}
@@ -29,7 +29,7 @@ class TeamsList extends Component {
 
 
 export default TeamsList;
-// export default class TeamsList extends Component {
+
 //   state = { nfl_teams: [] }
 //
 //   componentWillMount() {
