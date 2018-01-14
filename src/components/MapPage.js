@@ -43,6 +43,14 @@ export default class MapPage extends Component {
               title={'Buffs Watch Party'}
               description={'CU BUFFS Game'}
             />
+            <MapView.Marker
+              coordinate={{
+                latitude: 39.745897,
+                longitude: -104.947647,
+              }}
+              title={'Giants Fans!'}
+              description={'Giants vs Cowboys'}
+            />
 
           </MapView>
         </View>

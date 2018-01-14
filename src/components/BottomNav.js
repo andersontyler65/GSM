@@ -19,9 +19,9 @@ export default class BottomNav extends Component {
           <Button onPress={() => Actions.location()}>
             <Text>Location</Text>
           </Button>
-          <Button onPress={() => Actions.userProfile()}>
+          {/* <Button onPress={() => Actions.userProfile()}>
             <Text>Profile</Text>
-          </Button>
+          </Button> */}
         </FooterTab>
       </Footer>
     );

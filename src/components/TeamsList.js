@@ -30,37 +30,7 @@ class TeamsList extends Component {
 
 export default TeamsList;
 
-//   state = { nfl_teams: [] }
 //
-//   componentWillMount() {
-//     axios.get('https://gamesetmatch-db.herokuapp.com/nfl_teams')
-//       .then(response => this.setState({ official_name: response.data }))
-//   }
-//
-//   renderOfficialName() {
-//     return this.state.official_name.map(official_name =>
-//     <Text key={team.name}>
-//       {official_name.official_name}
-//     </Text>
-//     )
-//   }
-//
-//   render() {
-//     console.log(this.state)
-//
-//     return (
-//       <View>
-//         {this.renderOfficialName}
-//       </View>
-//     );
-//   }
-// }
-
-// const styles = {
-//   background: {
-//     backgroundColor: 'rgba(0,0,0, 0.5)',
-//   }
-// }
 // <Container>
 //   <Content scrollEnabled={true}>
 //     <Separator bordered>

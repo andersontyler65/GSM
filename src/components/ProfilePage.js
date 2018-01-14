@@ -9,6 +9,7 @@ import {
   ScrollView,
 } from 'react-native';
 import BottomNav from './BottomNav';
+import Favorites from './Favorites';
 
 export default class ProfilePage extends Component {
   render() {
@@ -20,6 +21,9 @@ export default class ProfilePage extends Component {
 
           <Text style={styles.name}> Tyler Anderson </Text>
           <Text style={styles.pos}> - GO BRONCOS! - </Text>
+
+        <Favorites />
+
         </View>
 
         <BottomNav />
