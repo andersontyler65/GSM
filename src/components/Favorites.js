@@ -33,8 +33,17 @@ class Favorites extends Component {
           <Item>
             <Image style={styles.profilepicWrap} source={require('../img/nuggets_logo.jpg')} />
           </Item>
+
+          <Item>
+            <Image style={styles.profilepicWrap} source={require('../img/rockies_logo.jpg')} />
+          </Item>
+
+          <Item>
+            <Image style={styles.profilepicWrap} source={require('../img/NY_GIANTS_LOGO.jpg')} />
+          </Item>
+
         </View>
-        // </Content>
+         </Content>
       // </Container>
     );
   }

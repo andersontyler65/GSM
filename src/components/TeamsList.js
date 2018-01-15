@@ -20,9 +20,71 @@ class TeamsList extends Component {
 
   render() {
   return (
-    <View >
-      {this.renderTeams()}
-    </View>
+    <Container>
+       <Content scrollEnabled={true}>
+         <Separator bordered>
+           <Text>NFL</Text>
+         </Separator>
+         <ListItem>
+           <Text>Denver Broncos</Text>
+         </ListItem>
+         <Separator bordered>
+           <Text>MLB</Text>
+         </Separator>
+         <ListItem>
+           <Text>Colorado Rockies</Text>
+         </ListItem>
+         <Separator bordered>
+           <Text>MLS</Text>
+         </Separator>
+         <ListItem last>
+           <Text>Colorado Rapids</Text>
+         </ListItem>
+         <Separator bordered>
+           <Text>NBA</Text>
+         </Separator>
+         <ListItem>
+           <Text>Denver Nuggets</Text>
+         </ListItem>
+         <Separator bordered>
+           <Text>NHL</Text>
+         </Separator>
+         <ListItem>
+           <Text>Colorado Avalanche</Text>
+         </ListItem>
+         <Separator bordered>
+           <Text>NCAA Football</Text>
+         </Separator>
+         <ListItem>
+           <Text>Colorado</Text>
+         </ListItem>
+         <Separator bordered>
+           <Text>NCAA Mens Basketball</Text>
+         </Separator>
+         <ListItem>
+           <Text>CU Denver</Text>
+         </ListItem>
+         <Separator bordered>
+           <Text>NCAA Soccer</Text>
+         </Separator>
+         <ListItem>
+           <Text>JWU</Text>
+         </ListItem>
+         <Separator bordered>
+           <Text>NCAA Womens Basketball</Text>
+         </Separator>
+         <ListItem>
+           <Text>ASU</Text>
+         </ListItem>
+       </Content>
+     </Container>
+
+//API CALL---->
+    // <Content>
+    //  <View>
+    //    {this.renderTeams()}
+    //  </View>
+    // </Content>
     )
   }
 }
@@ -31,61 +93,4 @@ class TeamsList extends Component {
 export default TeamsList;
 
 //
-// <Container>
-//   <Content scrollEnabled={true}>
-//     <Separator bordered>
-//       <Text>NFL</Text>
-//     </Separator>
-//     <ListItem >
-//       <Text>Denver Broncos</Text>
-//     </ListItem>
-//     <Separator bordered>
-//       <Text>MLB</Text>
-//     </Separator>
-//     <ListItem>
-//       <Text>Colorado Rockies</Text>
-//     </ListItem>
-//     <Separator bordered>
-//       <Text>MLS</Text>
-//     </Separator>
-//     <ListItem last>
-//       <Text>Colorado Rapids</Text>
-//     </ListItem>
-//     <Separator bordered>
-//       <Text>NBA</Text>
-//     </Separator>
-//     <ListItem>
-//       <Text>Denver Nuggets</Text>
-//     </ListItem>
-//     <Separator bordered>
-//       <Text>NHL</Text>
-//     </Separator>
-//     <ListItem>
-//       <Text>Colorado Avalanche</Text>
-//     </ListItem>
-//     <Separator bordered>
-//       <Text>NCAA Football</Text>
-//     </Separator>
-//     <ListItem>
-//       <Text>Colorado</Text>
-//     </ListItem>
-//     <Separator bordered>
-//       <Text>NCAA Mens Basketball</Text>
-//     </Separator>
-//     <ListItem>
-//       <Text>CU Denver</Text>
-//     </ListItem>
-//     <Separator bordered>
-//       <Text>NCAA Soccer</Text>
-//     </Separator>
-//     <ListItem>
-//       <Text>JWU</Text>
-//     </ListItem>
-//     <Separator bordered>
-//       <Text>NCAA Womens Basketball</Text>
-//     </Separator>
-//     <ListItem>
-//       <Text>ASU</Text>
-//     </ListItem>
-//   </Content>
-// </Container>
+//
