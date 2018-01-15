@@ -45,7 +45,7 @@ class LoginForm extends Component {
     return(
       <Card>
         <CardSection>
-          <Image style={styles.logoStyle} source={require('../img/gsmLogo.png')}/>
+          <Image style={styles.logoStyle} source={require('../img/GSM_Logo.png')}/>
         </CardSection>
 
         <CardSection>
@@ -85,8 +85,8 @@ const styles = {
   },
   logoStyle: {
     flex: 1,
-    width: 200,
-    height: 400,
+    width: 250,
+    height: 350,
     alignSelf: 'center',
   }
 }

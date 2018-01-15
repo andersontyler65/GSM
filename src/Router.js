@@ -30,7 +30,7 @@ import Favorites from './components/Favorites';
            <Scene
              key="addFavorite"
              component={TeamsList}
-             title="Add Favorites"
+             title="Teams"
            />
            <Scene
              key="selectGames"

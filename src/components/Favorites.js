@@ -8,7 +8,7 @@ import {
   Dimensions,
   ScrollView,
 } from 'react-native';
-import { Container, Header, Content, Item, Input} from 'native-base';
+import { Container, Header, Button, Content, Item, Input} from 'native-base';
 
 class Favorites extends Component {
   render() {
@@ -16,9 +16,9 @@ class Favorites extends Component {
       // <Container style={styles.containerStyle}>
         <Content>
         <View style={styles.containerStyle}>
-          <Item>
+          <Button>
             <Image style={styles.profilepicWrap} source={require('../img/broncos_logo.jpg')} />
-          </Item>
+          </Button>
 
           <Item>
             <Image style={styles.profilepicWrap} source={require('../img/avs_logo.jpg')} />

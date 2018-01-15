@@ -13,55 +13,55 @@ render() {
            <Text>Denver Broncos</Text>
          </Separator>
          <ListItem >
-           <Text>Broncos vs LAC</Text>
+           <Text>Broncos vs LA Chargers</Text>
          </ListItem>
          <Separator bordered>
            <Text>MLB</Text>
          </Separator>
          <ListItem>
-           <Text>Colorado Rockies</Text>
+           <Text>Colorado Rockies vs LA Dodgers</Text>
          </ListItem>
          <Separator bordered>
            <Text>MLS</Text>
          </Separator>
          <ListItem last>
-           <Text>Colorado Rapids</Text>
+           <Text>Colorado Rapids vs Seattle Sounders</Text>
          </ListItem>
          <Separator bordered>
            <Text>NBA</Text>
          </Separator>
          <ListItem>
-           <Text>Denver Nuggets</Text>
+           <Text>Denver Nuggets vs NY Knicks</Text>
          </ListItem>
          <Separator bordered>
            <Text>NHL</Text>
          </Separator>
          <ListItem>
-           <Text>Colorado Avalanche</Text>
+           <Text>Colorado Avalanche vs Minnesota Wild </Text>
          </ListItem>
          <Separator bordered>
            <Text>NCAA Football</Text>
          </Separator>
          <ListItem>
-           <Text>Colorado</Text>
+           <Text>Colorado vs Oregon</Text>
          </ListItem>
          <Separator bordered>
            <Text>NCAA Mens Basketball</Text>
          </Separator>
          <ListItem>
-           <Text>CU Denver</Text>
+           <Text>CU Denver vs CSU Rams</Text>
          </ListItem>
          <Separator bordered>
            <Text>NCAA Soccer</Text>
          </Separator>
          <ListItem>
-           <Text>JWU</Text>
+           <Text>Colorado vs Washington</Text>
          </ListItem>
          <Separator bordered>
            <Text>NCAA Womens Basketball</Text>
          </Separator>
          <ListItem>
-           <Text>ASU</Text>
+           <Text>ASU vs Arizona</Text>
          </ListItem>
        </Content>
      </Container>
