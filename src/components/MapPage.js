@@ -5,9 +5,11 @@ import {
   AppRegistry,
   StyleSheet,
 } from 'react-native';
-import MapView from 'react-native-maps';
+import { Button } from './common/Button';
+import MapView, { Marker, Callout } from 'react-native-maps';
 
 export default class MapPage extends Component {
+
   render() {
     return (
         <View style={styles.container}>
@@ -19,38 +21,52 @@ export default class MapPage extends Component {
               latitudeDelta: 0.0922,
               longitudeDelta: 0.0421,
             }}>
+
+
             <MapView.Marker
-              coordinate={{
-                latitude: 39.743890,
-                longitude: -105.020109,
-              }}
-              title={'Broncos Tailgate Party'}
-              description={'Come Join before the game!'}
-            />
+              coordinate={{ latitude: 39.743890, longitude: -105.020109 }}>
+              <MapView.Callout>
+                <Text style={{fontSize: 16, fontWeight: 'bold'}}>Broncos Watch Party</Text>
+                <Button>{"JOIN"}</Button>
+              </MapView.Callout>
+            </MapView.Marker>
+
+            {/* title={'Broncos Tailgate Party'}
+             description={'Join'}> */}
+
             <MapView.Marker
-              coordinate={{
-                latitude: 39.755882,
-                longitude: -104.994178,
-              }}
-              title={'Mizzou Watch Party'}
-              description={'Tigers Game'}
-            />
+              coordinate={{ latitude: 39.755882, longitude: -104.994178 }}>
+              {/* // title={'Mizzou Watch Party'}
+              // description={'Tigers Game'} */}
+              <MapView.Callout>
+                <Text style={{fontSize: 16, fontWeight: 'bold'}}>Mizzou Watch Party</Text>
+                <Button>{"JOIN"}</Button>
+              </MapView.Callout>
+            </MapView.Marker>
+
+
             <MapView.Marker
-              coordinate={{
-                latitude: 39.748660,
-                longitude: -105.007710,
-              }}
-              title={'Buffs Watch Party'}
+              coordinate={{ latitude: 39.748660, longitude: -105.007710 }}>
+              {/* title={'Buffs Watch Party'}
               description={'CU BUFFS Game'}
-            />
+             */}
+             <MapView.Callout>
+               <Text style={{fontSize: 16, fontWeight: 'bold'}}>Buffs Watch Party</Text>
+               <Button>{"JOIN"}</Button>
+             </MapView.Callout>
+           </MapView.Marker>
+
+
             <MapView.Marker
-              coordinate={{
-                latitude: 39.745897,
-                longitude: -104.947647,
-              }}
-              title={'Giants Fans!'}
+              coordinate={{ latitude: 39.745897, longitude: -104.947647 }}>
+              {/* title={'Giants Watch Party!'}
               description={'Giants vs Cowboys'}
-            />
+            /> */}
+            <MapView.Callout>
+              <Text style={{fontSize: 16, fontWeight: 'bold'}}>Giants Watch Party</Text>
+              <Button>{"JOIN"}</Button>
+            </MapView.Callout>
+            </MapView.Marker>
 
           </MapView>
         </View>

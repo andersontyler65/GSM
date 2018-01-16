@@ -10,7 +10,7 @@ render() {
     <Container>
        <Content scrollEnabled={true}>
          <Separator bordered>
-           <Text>Denver Broncos</Text>
+           <Text>NFL</Text>
          </Separator>
          <ListItem >
            <Text>Broncos vs LA Chargers</Text>
